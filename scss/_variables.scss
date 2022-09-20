@@ -1,0 +1,11 @@
+$color-negro: #000;
+$color-blanco: #fff;
+$tam-titulos: 30px;
+$tam-text: 20px;
+
+//MIXINS
+@mixin img($ancho, $alto) {
+	width: $ancho;
+	height: $alto;
+	object-fit: cover;
+}

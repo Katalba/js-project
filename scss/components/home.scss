@@ -1,0 +1,36 @@
+/************************* CATEGORIES HOME ********************/
+.d-flex{
+    margin: 5% 0 5% 0;
+    justify-content: space-evenly;
+    .categorie{
+        @include img($ancho: (22vw), $alto: (75vh));
+        position: relative;
+        img{
+            @include img($ancho: (22vw), $alto: (75vh));
+            transition: 1s ease;
+            &:hover{
+                transform: translateY(-10px) scale(1.02);
+            }
+        }
+        .title-categorie{
+            text-align: center;
+            bottom: 5%;
+            left: 5%;
+            right: 5%;
+            position: absolute;
+            h4{
+                font-size: $tam-titulos;
+                text-transform: uppercase;
+                color: $color-blanco;
+                font-family: 'Francois One', sans-serif;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: underline;
+                text-transform: uppercase;
+                color: $color-negro;
+                font-size: 15px;
+            }
+        }
+    }
+}

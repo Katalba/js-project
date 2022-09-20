@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tienda, ropa, mujer, jeans, remeras, blusas, camisas, vestidos, carteras">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94ff38bb51.js" crossorigin="anonymous"></script>
+    <title>Valkiria | Tienda de Ropa y Accesorios para Mujer</title>
+</head>
+
+<body>
+    <!---------------- menuBar ------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/LOGO.png" height="50px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/jeans.html">Jeans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/remeras.html">Remeras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/vestidos.html">Vestidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!---------------- menuBar Mobile ------------------->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/LOGO.png" alt="logo">
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/jeans.html">Jeans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/remeras.html">Remeras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/vestidos.html">Vestidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/accesorios.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--DESKTOP-->
+        <div class="d-none d-sm-none d-md-block">
+            <img src="img/INICIO.webp" width="100%" alt="inicio">
+        </div>
+        <!--MOBILE-->
+        <div class="d-block d-sm-block d-md-none">
+            <img src="" width="100%" alt="inicio">
+        </div>
+    </header>
+
+
+    <!---------------- Carousel intro ------------------->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Basic jeans.webp" class="d-block w-100" alt="novedades">
+            </div>
+            <div class="carousel-item">
+                <img src="img/LAMOURE-EN-ROUGE--TWO.jpg" class="d-block w-100" alt="novedades">
+            </div>
+            <div class="carousel-item">
+                <img src="img/LOVE-AND-GIFTS--BANNER-HOME-LG.jpg" class="d-block w-100" alt="novedades">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!---------------- Categories ------------------->
+    <section class="d-flex">
+        <div class="categorie">
+            <a href="html/jeans.html">
+                <img src="IMG/JEAN-PORTADA.webp" alt="jeans">
+            </a>
+            <div class="title-categorie">
+                <h4>Jeans</h4>
+                <a href="">Ver todo</a>
+            </div>
+        </div>
+        <div class="categorie">
+            <a href="html/remeras.html">
+                <img src="img/REMERA-PORTADA.webp" alt="Remeras">
+            </a>
+            <div class="title-categorie">
+                <h4>Remeras</h4>
+                <a href="">Ver todo</a>
+            </div>
+        </div>
+        <div class="categorie">
+            <a href="html/vestidos.html">
+                <img src="IMG/VESTIDO-PORTADA.webp" alt="Vestidos">
+            </a>
+            <div class="title-categorie">
+                <h4>Vestidos</h4>
+                <a href="">Ver todo</a>
+            </div>
+        </div>
+        <div class="categorie">
+            <a href="html/accesorios.html">
+                <img src="img/ACCESORIOS-PORTADA.webp" alt="Accesorios">
+            </a>
+            <div class="title-categorie">
+                <h4>Accesorios</h4>
+                <a href="">Ver todo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-------- Brands ---------->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="img/visa.jpg">
+            </div>
+            <div class="col-5">
+                <img src="img/martercard.png">
+            </div>
+            <div class="col-5">
+                <img src="img/amex.jpg">
+            </div>
+            <div class="col-5">
+                <img src="img/MP.png">
+            </div>
+            <div class="col-5">
+                <img src="img/pay.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!---------------- Footer ------------------->
+    <footer>
+        <div class="informacion">
+            <h3>Para más información</h3>
+            <p>Si necesitas ponerte en contacto con nosotros o tienes <br>
+                alguna duda adicional, contáctanos a través de:</p>
+
+        </div>
+        <div class="links">
+            <h3>Mantente al día</h3>
+            <p>Nuestras redes:</p>
+            <ul>
+                <li><a href="https://www.airbnb.com.ar/rooms/54038113?adults=2&check_in=2022-11-07&check_out=2022-11-13&federated_search_id=d31c1cb7-3df6-4e09-8958-d22be1be430b&source_impression_id=p3_1659310240_KqBvvUEywt9tpOAS"
+                        aria-label="ainbnb" target="_blank"><i class="fa-brands fa-airbnb"></i></a></li>
+                <li><a href="https://www.instagram.com/buenavistachalten/" aria-label="instagram" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div id="copyright">
+            Made with <i class="fa fa-heart-o"></i> by Katherine Cantillo
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.title{
+    text-align: center;
+    margin: 5%;
+    font-size: $tam-titulos;
+}
+.container-madre{
+    width: 100%;
+}
+
+.filtros-B{
+    margin: 3%;
+    img{
+        width: 20vw;
+        height: 60vh;
+        object-fit: cover;
+    }
+}
+
+.small-container{
+   margin: 0 1% 5% 0;
+    .col-4{
+        flex-basis: 30%;
+        padding: 10px;
+        min-width: 320px;
+        margin-bottom: 50px;
+        transition: 1s ease;
+        &:hover{
+            transform: translateY(-5px); 
+        }
+        h4{
+            color: $color-negro;
+        }
+        p{
+            font-size: 14px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
