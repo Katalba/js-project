@@ -62,7 +62,7 @@ while (selection != "no") {
     }
 }
 
-const total = shopping_car.reduce((acc, el) => acc + el.price * el.quentify, 0)
+const total = shopping_car.reduce((acc, e) => acc + e.price * e.quentify, 0)
 
 alert(`El total de su compra es: ${total}`)
 alert("Gracias por tu compra <3")
