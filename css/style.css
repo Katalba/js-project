@@ -19,6 +19,9 @@ header {
     justify-content: flex-end; }
     .bg-light .navbar-collapse .navbar-nav .nav-item {
       padding: 5px 8px; }
+      .bg-light .navbar-collapse .navbar-nav .nav-item #cart img {
+        width: 50px;
+        height: 50px; }
       .bg-light .navbar-collapse .navbar-nav .nav-item .nav-link {
         color: #000;
         font-size: 14px;
@@ -113,6 +116,13 @@ footer {
     .small-container .col-4 h4 {
       color: #000; }
     .small-container .col-4 p {
-      font-size: 14px; }
+      font-size: 14px;
+      font-weight: bold; }
     .small-container .col-4 img {
       width: 100%; }
+    .small-container .col-4 .btn-primary {
+      background: #fff;
+      text-transform: uppercase;
+      border-radius: 0;
+      border-color: #000;
+      color: #000; }

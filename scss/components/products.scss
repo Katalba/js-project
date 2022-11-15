@@ -32,9 +32,17 @@
         }
         p{
             font-size: 14px;
+            font-weight: bold;
         }
         img{
             width: 100%;
+        }
+        .btn-primary{
+            background: #fff;
+            text-transform: uppercase;
+            border-radius: 0;
+            border-color: #000;
+            color: #000;
         }
     }
 }

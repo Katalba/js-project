@@ -19,17 +19,67 @@
 
 <body>
     <!---------------- menuBar ------------------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/LOGO.png" height="50px" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/LOGO.png" height="50px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/jeans.html">Jeans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/remeras.html">Remeras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/vestidos.html">Vestidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="show_cart" class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <div class="container" id="cart">
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <td>Producto</td>
+                                            <td>Cantidad</td>
+                                            <td>Precio</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="t-body">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!---------------- menuBar Mobile ------------------->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/LOGO.png" alt="logo">
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
@@ -52,193 +102,196 @@
                 </ul>
             </div>
         </div>
-    </nav>
 
-    <!---------------- menuBar Mobile ------------------->
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/LOGO.png" alt="logo">
-            </a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/jeans.html">Jeans</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/remeras.html">Remeras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/vestidos.html">Vestidos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/accesorios.html">Accesorios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!---------------- CONTENEDOR MADRE ------------------->
-    <h2 class="title">ACCESORIOS</h2>
-    <div class="d-flex container-madre">
-        <div class="filtros-B">
-            <img src="../img/Aretes.webp" alt="">
-        </div>
-        <div class="small-container">
-            <div class="d-flex flex-wrap">
-                <div class="col-4">
-                    <img src="../img/bolso-uno.webp">
-                    <h4>Short Sleeve Eyelet Blouse</h4>
-                    <div class="rating">
+        <!---------------- CONTENEDOR MADRE ------------------->
+        <h2 class="title">ACCESORIOS</h2>
+        <div class="d-flex container-madre">
+            <div class="filtros-B">
+                <img src="../img/Aretes.webp" alt="">
+            </div>
+            <div class="small-container">
+                <div class="d-flex flex-wrap">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bolso-uno.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/bisuteria-doce.webp">
-                    <h4>Straple Blouse With Pleats</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bisuteria-doce.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/bolso-tres.webp">
-                    <h4>Long Sleeve Knitted Striped Blouse With Bo</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bolso-tres.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/bolso-cuatro.webp">
-                    <h4>Ruffled Sleeve Blouse With Furrowed Cup</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bolso-cuatro.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/bolso-cinco.webp">
-                    <h4>Long Sleeve Crop With Crimps</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bolso-cinco.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/ACCESORIOS-PORTADA.webp">
-                    <h4>Cropped peasant blouse</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/ACCESORIOS-PORTADA.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/bisuteria-seis.webp">
-                    <h4>Cropped peasant blouse</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bisuteria-seis.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/bisuteria-siete.webp">
-                    <h4>Cropped peasant blouse</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bisuteria-siete.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/bisuteria-ocho.webp">
-                    <h4>Cropped peasant blouse</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bisuteria-ocho.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/bisuteria-nueve.webp">
-                    <h4>Cropped peasant blouse</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bisuteria-nueve.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/bisuteria-diez.webp">
-                    <h4>Cropped peasant blouse</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bisuteria-diez.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="../img/bisuteria-once.webp">
-                    <h4>Cropped peasant blouse</h4>
-                    <div class="rating">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="../img/bisuteria-once.webp">
+                            <div class="card-body">
+                                <h5 class="card-title">Cropped peasant blouse</h5>
+                                <p class="price">$50.00</p>
+                                <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
                 </div>
             </div>
         </div>
-    </div>
 
 
-<!-------- Brands ---------->
-<div class="brands">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-5">
-                <img src="../img/visa.jpg">
-            </div>
-            <div class="col-5">
-                <img src="../img/martercard.png">
-            </div>
-            <div class="col-5">
-                <img src="../img/amex.jpg">
-            </div>
-            <div class="col-5">
-                <img src="../img/MP.png">
-            </div>
-            <div class="col-5">
-                <img src="../img/pay.jpg">
+        <!-------- Brands ---------->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="../img/visa.jpg">
+                    </div>
+                    <div class="col-5">
+                        <img src="../img/martercard.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="../img/amex.jpg">
+                    </div>
+                    <div class="col-5">
+                        <img src="../img/MP.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="../img/pay.jpg">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
 
 
-    <!---------------- Footer ------------------->
-    <footer>
-        <div class="informacion">
-            <h3>Para más información</h3>
-            <p>Si necesitas ponerte en contacto con nosotros o tienes <br>
-                alguna duda adicional, contáctanos a través de:</p>
+        <!---------------- Footer ------------------->
+        <footer>
+            <div class="informacion">
+                <h3>Para más información</h3>
+                <p>Si necesitas ponerte en contacto con nosotros o tienes <br>
+                    alguna duda adicional, contáctanos a través de:</p>
 
-        </div>
-        <div class="links">
-            <h3>Mantente al día</h3>
-            <p>Nuestras redes:</p>
-            <ul>
-                <li><a href="https://www.airbnb.com.ar/rooms/54038113?adults=2&check_in=2022-11-07&check_out=2022-11-13&federated_search_id=d31c1cb7-3df6-4e09-8958-d22be1be430b&source_impression_id=p3_1659310240_KqBvvUEywt9tpOAS"
-                        aria-label="ainbnb" target="_blank"><i class="fa-brands fa-airbnb"></i></a></li>
-                <li><a href="https://www.instagram.com/buenavistachalten/" aria-label="instagram" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </div>
-        <div id="copyright">
-            Made with <i class="fa fa-heart-o"></i> by Katherine Cantillo
-        </div>
-    </footer>
+            </div>
+            <div class="links">
+                <h3>Mantente al día</h3>
+                <p>Nuestras redes:</p>
+                <ul>
+                    <li><a href="https://www.airbnb.com.ar/rooms/54038113?adults=2&check_in=2022-11-07&check_out=2022-11-13&federated_search_id=d31c1cb7-3df6-4e09-8958-d22be1be430b&source_impression_id=p3_1659310240_KqBvvUEywt9tpOAS"
+                            aria-label="ainbnb" target="_blank"><i class="fa-brands fa-airbnb"></i></a></li>
+                    <li><a href="https://www.instagram.com/buenavistachalten/" aria-label="instagram" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+                Made with <i class="fa fa-heart-o"></i> by Katherine Cantillo
+            </div>
+        </footer>
 
 
 
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+        <script src="../js/cart.js"></script>
 </body>
 
 </html>

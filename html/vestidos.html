@@ -19,40 +19,56 @@
 
 <body>
     <!---------------- menuBar ------------------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/LOGO.png" height="50px" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/jeans.html">Jeans</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/remeras.html">Remeras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/vestidos.html">Vestidos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/accesorios.html">Accesorios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/LOGO.png" height="50px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/jeans.html">Jeans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/remeras.html">Remeras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/vestidos.html">Vestidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="show_cart" class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <div class="container" id="cart">
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <td>Producto</td>
+                                            <td>Cantidad</td>
+                                            <td>Precio</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="t-body">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
     <!---------------- menuBar Mobile ------------------->
     <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
@@ -100,112 +116,124 @@
                     <h4>Short Sleeve Eyelet Blouse</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/vestido2.webp">
                     <h4>Straple Blouse With Pleats</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/vestido3.webp">
                     <h4>Long Sleeve Knitted Striped Blouse With Bo</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/vestido4.webp">
                     <h4>Ruffled Sleeve Blouse With Furrowed Cup</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/vestido5.webp">
                     <h4>Long Sleeve Crop With Crimps</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/vestido6.webp">
                     <h4>Cropped peasant blouse</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/VESTIDO-PORTADA.webp">
                     <h4>Cropped peasant blouse</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/vestido12.webp">
                     <h4>Cropped peasant blouse</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/vestido8.webp">
                     <h4>Cropped peasant blouse</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/vestido9.webp">
                     <h4>Cropped peasant blouse</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/vestido10.webp">
                     <h4>Cropped peasant blouse</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
                 <div class="col-4">
                     <img src="../img/vestido11.webp">
                     <h4>Cropped peasant blouse</h4>
                     <div class="rating">
                     </div>
-                    <p>$50.00</p>
+                    <p class="price">$50.00</p>
+                    <a href="#" class="btn btn-primary agregar-carrito">Agregar al carrito</a>
                 </div>
             </div>
         </div>
     </div>
 
 
-<!-------- Brands ---------->
-<div class="brands">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-5">
-                <img src="../img/visa.jpg">
-            </div>
-            <div class="col-5">
-                <img src="../img/martercard.png">
-            </div>
-            <div class="col-5">
-                <img src="../img/amex.jpg">
-            </div>
-            <div class="col-5">
-                <img src="../img/MP.png">
-            </div>
-            <div class="col-5">
-                <img src="../img/pay.jpg">
+    <!-------- Brands ---------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="../img/visa.jpg">
+                </div>
+                <div class="col-5">
+                    <img src="../img/martercard.png">
+                </div>
+                <div class="col-5">
+                    <img src="../img/amex.jpg">
+                </div>
+                <div class="col-5">
+                    <img src="../img/MP.png">
+                </div>
+                <div class="col-5">
+                    <img src="../img/pay.jpg">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
     <!---------------- Footer ------------------->
@@ -238,6 +266,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+        <script src="../js/cart.js"></script>
 </body>
 
 </html>
