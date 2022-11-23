@@ -1,10 +1,71 @@
 /* *********************** Footer *************************/
 footer {
-    background: $color-negro;
     height: 40vh;
     padding: 3rem;
-    margin-top: 10rem;
-    color: $color-blanco;
+    margin-top: 2rem;
+    color: $color-negro;
+
+    .row {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .contact{
+            width: 30%;
+            height: 30vh;
+            img{
+                width: 13vw;
+            }
+            .datos{
+                ul{
+                    h3{
+                        text-transform: uppercase;
+                    }
+                    li{
+                        list-style: none;
+                    }
+                }
+            }
+        }
+        .informacion, .links {
+            width: 30%;
+            height: 30vh;
+            h3{
+                text-transform: uppercase;
+            }
+            li{
+                list-style: none;
+            }
+            .media{
+                height: 20vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    li{
+                        i{
+                            font-size: large;
+                            color: $color-negro;
+                            font-weight: bold;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            color: red;
+            font-weight: bold;
+        }
+    }
 }
 
 /*-------- Brands --------*/
@@ -13,7 +74,7 @@ footer {
     justify-content: center;
 
     .col-5 {
-        width: 160px;
+        width: 120px;
         display: flex;
         justify-content: center;
 
