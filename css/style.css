@@ -11,6 +11,13 @@ header {
   position: relative;
   width: 100%;
   height: 100vh; }
+  header #bitcoin-card {
+    width: 20%;
+    height: 20%;
+    border: 1px solid;
+    position: absolute;
+    top: 70%;
+    left: 5%; }
 
 .bg-light {
   background: rgba(255, 255, 255, 0.267) !important; }
@@ -20,6 +27,7 @@ header {
     .bg-light .navbar-collapse .navbar-nav .nav-item {
       padding: 5px 8px; }
       .bg-light .navbar-collapse .navbar-nav .nav-item #cart {
+        left: 62%;
         position: absolute;
         display: none; }
         .bg-light .navbar-collapse .navbar-nav .nav-item #cart img {

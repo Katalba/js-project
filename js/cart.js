@@ -16,7 +16,16 @@
 // CART
 
 // SE MANTIENEN LOS PRODUCTOS EN EL CART
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cart;
+
+const carroLS = JSON.parse(localStorage.getItem('#t-body'));
+
+if (carroLS){
+    cart = carroLS;
+} else{
+    cart = [];
+}
+
 
 // CREAMOS BOTON PARA AGREGAR PRODUCTOS
 let btn_compra = document.querySelectorAll(".agregar-carrito");
@@ -58,22 +67,25 @@ const save_local = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
 };
 
+const carro = JSON.parse(localStorage.getItem('#t-body'));
 
+// SE MUESTRA EL PRODUCTO EN EL CART
 function mostrar_carrito( product ){
 
-    let fila = document.createElement("tr");
-    fila.innerHTML = `<td><img src="${product.img}"></td>
+    let productBox = document.createElement("tr");
+    productBox.innerHTML = `<td><img src="${product.img}"></td>
                       <td>${product.nombre}</td>
                       <td>${product.cantidad}</td>
                       <td>${product.precio}</td>
-                      <td><button class="btn btn-outline-danger borrar_elemento"><i class="fa-solid fa-trash-can"></i></td>`;
-         
-    let tabla = document.getElementById("t-body");
-    tabla.append( fila );
+                      <td><button class="btn btn-outline-danger borrar_producto"><i class=" fa-solid fa-trash-can"></i></td>`;
+     
+    // SE CREA VARIABLE PARA SHOW-PRODDUCT MEDIANTE APPEND
+    let content = document.getElementById("t-body");
+    content.append( productBox );
 
 
-
-    let btn_borrar = document.querySelectorAll(".borrar_elemento");
+// BORRAR PRODUCTO DEL CART
+    let btn_borrar = document.querySelectorAll(".borrar_producto");
 
 
     for( let boton of btn_borrar){
@@ -94,5 +106,20 @@ function borrar_producto(e){
 
 }
 
+// Fetch API
+
+const aplication = document.getElementById('bitcoin-card');
+
+fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+	.then(response => response.json())
+	.then(response => console.log(response))
+    .then(data => {
+        data.forEach(USD => {
+            let p = document.createElement('p')
+            p.innerHTML = USD.code
+            aplication.appendChild(p)
+        });
+    })
+	.catch(err => console.log(err));
 
 
